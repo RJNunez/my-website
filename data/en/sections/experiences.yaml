@@ -1,0 +1,59 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Center for Climate, Health, and the Global Environment (C-CHANGE)
+    url: "https://www.hsph.harvard.edu/c-change/"
+    location: Boston, MA
+    # company overview
+    overview: The Center for Climate, Health, and the Global Environment at the Harvard T.H. Chan School of Public Health (Harvard Chan C-CHANGE) translates innovative research from faculty and students across the Harvard T.H. Chan School of Public Health to inform actions that improve public health today and create a more just, sustainable, and healthy future for all.
+  positions:
+  - designation: Biostatistics Student Ambassador to C-CHANGE
+    start: Sep 2019
+    end: May 2020
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Serve as a liason between the Biostatistics department and C-CHANGE
+    - Provide monthly reports to C-CHANGE of updates in the Biostatistics field related to climate health and the environment
+#  - designation: Junior Software Engineer
+#    start: Nov 2017
+#    end: Oct 2019
+#    responsibilities:
+#    - Implement and test xyz feature for abc tool.
+#    - Support client for abc tool.
+#    - Learn k,d,w technology for xyz.
+
+- company:
+    name: Biostatistics Student Consulting Center (BSCC)
+    url: "https://www.hsph.harvard.edu/biostatistics/bscc/"
+    location: Boston, MA
+    overview: The Biostatistics Student Consulting Center (BSCC) is a free statistical consulting service provided by doctoral students in the Department of Biostatistics. The center is open to any student in the Harvard T.H. Chan School of Public Health or the Harvard Integrated Life Sciences (HILS) federation for statistical questions that arise outside of coursework. This may include guidance on study design, analysis planning, statistical programming, and more. The BSCC was made possible by a grant from the Harvard Initiative for Learning and Teaching and is currently funded by the Department of Biostatistics.
+  positions:
+  - designation: Biostatistics Consultant
+    start: Sep 2019
+    end: May 2020
+    responsibilities:
+    - Work one-on-one with students inquiring help with their projects
+
+- company:
+    name: Interdisciplinary and Quantitative Biology Hackathon (IQB Hackathon)
+    url: "http://iqbioreu.uprrp.edu/index.php/program/"
+    location: San Juan, PR
+    overview: IQ BIO REU is a summer research and student development program funded by the National Science Foundation (NSF) that offers opportunities for undergraduate students from universities and colleges that lack a strong research component and those from groups that have been historically underrepresented in STEM fields. 
+  positions:
+  - designation: Mentor for the the IQB Hackathon
+    start: Jul 2019
+    end: Jul 2019
+    responsibilities:
+    - Provide mentorships to the students participating in the hackathon 

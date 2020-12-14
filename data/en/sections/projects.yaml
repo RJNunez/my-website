@@ -1,0 +1,82 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Professional
+  filter: "professional"
+- name: Academic
+  filter: "academic"
+- name: Hobby
+  filter: "hobby"
+
+# your projects
+projects:
+- name: Quantifying the dynamics of migration after Hurricane Maria in Puerto Rico
+  #logo: /images/sections/projects/kubernetes.png
+  role: Co-first Author
+  timeline: "Dec 2020"
+  url: "https://www.pnas.org/content/early/2020/12/07/2001671117"
+  summary: Understanding the population composition and distribution of a region affected by a major natural disaster is vital for the allocation of resources to communities in need and critical to inform mortality estimates. Currently, the US Census Bureau is the only institution that publishes reliable population estimates for the United States and its territories. Since these are published once per year, it is impossible to use census-based population estimates to assess short-term postdisaster out-of-jurisdiction migration and within-jurisdiction migration. The utilization of social media traces, coupled with mobile phone data, could provide live estimates of postdisaster population changes in disaster-affected areas.
+  tags: ["academic", "climate-change", "demography"]
+  
+- name: Monitoring Health Systems by Estimating Excess Mortality
+  #logo: /images/sections/projects/kubernetes.png
+  role: First Author
+  timeline: "Jun 2020"
+  url: "https://www.medrxiv.org/content/10.1101/2020.06.06.20120857v2"
+  summary: Monitoring health systems during and after natural disasters, epidemics, or outbreaks is critical for guiding policy decisions and interventions. In the case of natural disasters the effects on public health can be direct or indirect. In the case of outbreaks and epidemics, lack of comprehensive testing or reporting can lead to challenges in measuring direct effects, while indirect effects can arise due to, for example, increased stress levels or reduced access to health services. When the effects are long lasting and difficult to detect in the short term, the accumulated effects can actually be devastating. Here we describe a statistical methodology and software that facilitates data-driven approaches. 
+  tags: ["academic", "excess-mortality"]
+
+- name: Post-Hurricane Vital Statistics Expose Fragility of Puerto Rico’s Health System
+  #logo: /images/sections/projects/tensorflow.png
+  role: First Author
+  timeline: "Sep 2018"
+  #repo: https://github.com/tensorflow/tensorflow
+  url: "https://www.biorxiv.org/content/10.1101/407874v2"
+  summary: Hurricane Maria made landfall in Puerto Rico on September 20, 2017. As recently as May of this year (2018), the official death count was 64. After a study describing a household survey reported a much higher death count estimate, as well as evidence of population displacement, extensive loss of services, and a prolonged death rate the government released death registry data. These newly released data will permit a better understanding of the effects of this hurricane. Here we fit a statistical model to mortality data that accounts for seasonal and non-hurricane related yearly effects. We then estimated the deviation from the expected death rate as a function of time.
+  tags: ["academic", "excess-mortality", "hurricane-maria"]
+
+- name: Excess Mortality Tracker
+  #logo: /images/sections/projects/kubernetes.png
+  role: Owner
+  timeline: "Nov 2020 - Present"
+  #repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  url: "https://rconnect.dfci.harvard.edu/excessmort/"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: R Shiny tool to assess excesss mortality in all 50 US states, and a myriad of countries around the world from Jan 2020 to the present. 
+  tags: ["professional", "hobby","R", "shiny"]
+
+- name: Monitoreo Covid-19 en Puerto Rico
+  #logo: /images/sections/projects/kubernetes.png
+  role: Contributor
+  timeline: "Jun 2020 - Present"
+  #repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  url: "https://rconnect.dfci.harvard.edu/covidpr/"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: R Shiny tool to assess the Covid-19 landscape in Puerto Rico
+  tags: ["professional", "hobby","R", "shiny"]
+
+- name: Twitter Visualizations
+  #logo: /images/sections/projects/kubernetes.png
+  role: Owner
+  timeline: "Jun 2020 - Present"
+  repo: https://github.com/RJNunez/twitter-vizs # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  summary: GGplot-based visualizations that I create on my free time.
+  tags: ["hobby","R", "viz"]
+
+
+#- name: Toha
+#  logo: /images/sections/projects/toha.png
+#  role: Owner
+#  timeline: "Jun 2019 - Present"
+#  repo: https://github.com/hossainemruz/toha
+#  summary: A Hugo theme for personal portfolio.
+#  tags: ["hobby","hugo","theme","professional"]

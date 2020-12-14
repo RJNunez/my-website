@@ -1,0 +1,78 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Biostatistics PhD Candidate
+# your company information
+company:
+  name: Harvard University
+  url: "https://www.hsph.harvard.edu/biostatistics/"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/resume.pdf"
+
+# a summary about you
+summary: I am a PhD candidate at [Harvard University](https://www.hsph.harvard.edu/biostatistics/) working with [Rafael Irizarry](https://rafalab.github.io). Currently, my research focuses on estimating human mortality and mobility after natural hazards. 
+         I received my Bachelor's in Computational Mathematics in 2017 from the [University of Puerto Rico at Humacao](https://www.upr.edu/humacao/), and my Master's in Biostatistics in 2020 from [Harvard University](https://www.hsph.harvard.edu/biostatistics/).
+         More broadly, I am interested in developing statistical methods and computational tools to elucidate problems in medicine, public health and society in general. Other interests of mine are to the right. 
+         
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "racosta@fas.harvard.edu"
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/RJANunez"
+- name: Github
+  icon: "fab fa-github"
+  url: "https://github.com/RJNunez"
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/rolandoacostanunez/"
+#- name: Stackoverflow
+#  icon: "fab fa-stack-overflow"
+#  url: "#"
+#- name: Facebook
+#  icon: "fab fa-facebook"
+#  url: "#"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Data Science
+  percentage: 100
+  color: "#2171b5"
+- name: Causal Inference
+  percentage: 100
+  color: yellow
+- name: Machine Learning
+  percentage: 100
+  color: "#2171b5"
+- name: Epidemiolgy
+  percentage: 100
+  color: yellow
+- name: Publich Health
+  percentage: 100
+  color: "#2171b5"
+- name: Climate Change
+  percentage: 100
+  color: yellow
+# you can also provide color code instead of pre-defined color name
+#- name: Education
+#  percentage: 100
+#  color: "#2171b5"
+#- name: Sports
+#  percentage: 100
+#  color: yellow
+#- name: Politics
+#  percentage: 100
+#  color: "#2171b5"

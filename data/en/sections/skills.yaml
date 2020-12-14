@@ -1,0 +1,50 @@
+# section information
+section:
+  name: Teaching
+  id: skills
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Interamerican University of Puerto Rico Data Science Summer Institute 2020
+  icon: ""
+  summary: "___Instructor___ __|__ ___June 2020___ \n\n This was a two week workshop on _Data Visualization with R_ where I taught topics ranging from data wrangling to principles of data visualization."
+  url: "https://github.com/RJNunez/inter-ds-workshop"
+
+- name: BST 226 - Applied Longitudinal Analysis
+  icon: "" #/images/sections/skills/go.png
+  summary: "___Teaching Assistant___ __|__ ___Jan 2020 - May 2020___ \n\n This course covers modern methods for the analysis of repeated measures, correlated outcomes and longitudinal data, including the unbalanced and incomplete data sets characteristic of biomedical research."
+  url: "https://www.coursicle.com/harvard/courses/BST/226/"
+
+- name: BST 260 - Introduction to Data Science
+  icon: "" #/images/sections/skills/cloud.png
+  summary: "___Teaching Assistant___ __|__ ___Sep 2019 - Dec 2019___ \n\n This class focuses on methods for learning from data, in order to gain useful predictions and insights."
+  url: "https://www.coursicle.com/harvard/courses/BST/260/"
+
+- name: BST 201 - Introduction to Statistical Methods
+  icon: "" #/images/sections/skills/docker.svg
+  summary: "___Teaching Assistant___ __|__ ___Sep 2018 - Dec 2018___ \n\n Covers basic statistical techniques that are important for analyzing data arising from epidemiology, environmental health and biomedical and other public health-related research."
+  url: "https://www.coursicle.com/harvard/courses/BST/201/"
+
+- name: Big Data in Biology - From Genes to the Biosphere
+  icon: "" # /images/sections/skills/prometheus.png
+  summary: "___Teaching Assistant___ __|__ ___Mar 2019___ \n\n One week workshop. The course intermixes short lectures with assessments. The two main topics of this week are data visualization and data wrangling"
+  url: "https://github.com/rafalab/uprrp-workshop"
+
+#- name: Linux
+#  icon: "/images/sections/skills/linux.png"
+#  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+
+#- name: Git
+#  icon: "/images/sections/skills/git.png"
+#  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+#  url: "https://git-scm.com/"
+
+#- name: C++
+#  icon: "/images/sections/skills/c++.png"
+#  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
