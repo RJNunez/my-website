@@ -11,6 +11,20 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Google
+    url: "https://about.google"
+    location: Boston, MA (Remote)
+    # company overview
+    overview: Google LLC is an American multinational technology company that specializes in Internet-related services and products
+  positions:
+  - designation: Data Science Intern
+    start: Jun 2021
+    end: Aug 2021
+    responsibilities:
+    - Research and develop statistical methods to find and estimate treatment heterogeneity in causal inference settings
+
+experiences:
+- company:
     name: Center for Climate, Health, and the Global Environment (C-CHANGE)
     url: "https://www.hsph.harvard.edu/c-change/"
     location: Boston, MA
