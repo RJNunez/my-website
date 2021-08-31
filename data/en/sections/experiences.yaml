@@ -9,19 +9,33 @@ section:
   # hideTitle: true 
 
 # Your experiences
+#experiences:
+#- company:
+#    name: Google
+#    url: "https://about.google"
+#    location: Boston, MA (Remote)
+    # company overview
+#    overview: Google LLC is an American multinational technology company that specializes in Internet-related services and products.
+#  positions:
+#  - designation: Data Science Intern
+#    start: Jun 2021
+#    end: Aug 2021
+#    responsibilities:
+#    - Research and develop statistical methods to find and estimate treatment heterogeneity in causal inference settings
 experiences:
 - company:
-    name: Google
-    url: "https://about.google"
-    location: Boston, MA (Remote)
-    # company overview
-    overview: Google LLC is an American multinational technology company that specializes in Internet-related services and products
+    name: Center for Climate, Health, and the Global Environment (C-CHANGE)
+    url: "https://www.hsph.harvard.edu/c-change/"
+    location: Boston, MA
+    overview: The Center for Climate, Health, and the Global Environment at the Harvard T.H. Chan School of Public Health (Harvard Chan C-CHANGE) translates innovative research from faculty and students across the Harvard T.H. Chan School of Public Health to inform actions that improve public health today and create a more just, sustainable, and healthy future for all.
   positions:
-  - designation: Data Science Intern
-    start: Jun 2021
-    end: Aug 2021
+  - designation: Biostatistics Student Ambassador to C-CHANGE
+    start: Sep 2019
+    end: May 2020
     responsibilities:
-    - Research and develop statistical methods to find and estimate treatment heterogeneity in causal inference settings
+    - Serve as a liason between the Biostatistics department and C-CHANGE
+    - Provide monthly reports to C-CHANGE of updates in the Biostatistics field related to climate health and the environment
+
 
 experiences:
 - company:
@@ -60,14 +74,14 @@ experiences:
     responsibilities:
     - Work one-on-one with students inquiring help with their projects
 
-#- company:
-#    name: Interdisciplinary and Quantitative Biology Hackathon (IQB Hackathon)
-#    url: "http://iqbioreu.uprrp.edu/index.php/program/"
-#    location: San Juan, PR
-#    overview: IQ BIO REU is a summer research and student development program funded by the National Science Foundation (NSF) that offers opportunities for undergraduate students from universities and colleges that lack a strong research component and those from groups that have been historically underrepresented in STEM fields. 
-#  positions:
-#  - designation: Mentor for the IQB Hackathon
-#    start: Jul 2019
-#    end: Jul 2019
-#    responsibilities:
-#    - Provide mentorships to the students participating in the hackathon 
+- company:
+    name: Interdisciplinary and Quantitative Biology Hackathon (IQB Hackathon)
+    url: "http://iqbioreu.uprrp.edu/index.php/program/"
+    location: San Juan, PR
+    overview: IQ BIO REU is a summer research and student development program funded by the National Science Foundation (NSF) that offers opportunities for undergraduate students from universities and colleges that lack a strong research component and those from groups that have been historically underrepresented in STEM fields. 
+  positions:
+  - designation: Mentor for the IQB Hackathon
+    start: Jul 2019
+    end: Jul 2019
+    responsibilities:
+    - Provide mentorships to the students participating in the hackathon 
