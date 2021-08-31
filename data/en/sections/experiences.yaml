@@ -3,7 +3,7 @@ section:
   name: Experiences
   id: experiences
   enable: true
-  weight: 5 
+  weight: 4
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true 
@@ -60,14 +60,14 @@ experiences:
     responsibilities:
     - Work one-on-one with students inquiring help with their projects
 
-- company:
-    name: Interdisciplinary and Quantitative Biology Hackathon (IQB Hackathon)
-    url: "http://iqbioreu.uprrp.edu/index.php/program/"
-    location: San Juan, PR
-    overview: IQ BIO REU is a summer research and student development program funded by the National Science Foundation (NSF) that offers opportunities for undergraduate students from universities and colleges that lack a strong research component and those from groups that have been historically underrepresented in STEM fields. 
-  positions:
-  - designation: Mentor for the IQB Hackathon
-    start: Jul 2019
-    end: Jul 2019
-    responsibilities:
-    - Provide mentorships to the students participating in the hackathon 
+#- company:
+#    name: Interdisciplinary and Quantitative Biology Hackathon (IQB Hackathon)
+#    url: "http://iqbioreu.uprrp.edu/index.php/program/"
+#    location: San Juan, PR
+#    overview: IQ BIO REU is a summer research and student development program funded by the National Science Foundation (NSF) that offers opportunities for undergraduate students from universities and colleges that lack a strong research component and those from groups that have been historically underrepresented in STEM fields. 
+#  positions:
+#  - designation: Mentor for the IQB Hackathon
+#    start: Jul 2019
+#    end: Jul 2019
+#    responsibilities:
+#    - Provide mentorships to the students participating in the hackathon 
