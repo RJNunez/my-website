@@ -24,6 +24,22 @@ experiences:
     - Research and develop statistical methods to find and estimate treatment heterogeneity in causal inference settings
 
 - company:
+    name: Covid-19 Mobility Data Network
+    url: "https://www.covid19mobility.org"
+    location: 
+    # company overview
+    overview: We are a network of infectious disease epidemiologists at universities around the world working with technology companies to use aggregated mobility data to support the COVID-19 response. Our goal is to provide daily updates to decision-makers at the state and local levels on how well social distancing interventions are working, using anonymized, aggregated data sets from mobile devices, along with analytic support for interpretation.
+  positions:
+  - designation: Affiliated Researcher
+    start: Jun 2020
+    end: Oct 2020
+    responsibilities:
+    - Analyzed mobility patterns for the City of Miami, FL (US), to ascertain the effectiveness of social distancing policies
+    - The mobility data was provided by the Facebook Data for Good Program 
+    - [Google](https://www.google.com/?client=safari)    
+    - (Google)[https://www.google.com/?client=safari]
+    
+- company:
     name: Center for Climate, Health, and the Global Environment (C-CHANGE)
     url: "https://www.hsph.harvard.edu/c-change/"
     location: Boston, MA
@@ -39,6 +55,7 @@ experiences:
     responsibilities:
     - Serve as a liason between the Biostatistics department and C-CHANGE
     - Provide monthly reports to C-CHANGE of updates in the Biostatistics field related to climate health and the environment
+
 #  - designation: Junior Software Engineer
 #    start: Nov 2017
 #    end: Oct 2019
