@@ -62,7 +62,7 @@ softSkills:
 - name: Causal Inference
   percentage: 100
   color: "#2171b5"
-- name: Machine \nLearning
+- name: Machine Learning
   percentage: 100
   color: yellow
 # you can also provide color code instead of pre-defined color name
