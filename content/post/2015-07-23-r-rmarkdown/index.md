@@ -1,3 +1,15 @@
+---
+title: "My first post"
+date: 2025-05-18
+description: A welcome post for the visitors
+menu:
+  sidebar:
+    name: Welcome
+    identifier: welcome
+    weight: 10
+hero: /Users/rolando.acosta/Documents/GitHub/my-website/content/post/2015-07-23-r-rmarkdown/index_files/figure-markdown_strict/test-img.png
+---
+
 # R Markdown
 
 Adding in line math: *α* + *β*. Adding outline math:  
