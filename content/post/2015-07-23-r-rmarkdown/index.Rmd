@@ -4,7 +4,6 @@ author: "Frida Gomam"
 date: 2015-07-23T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
-hero: index_files/figure-markdown_strict/test-img.png
 ---
 
 ```{r setup, include=FALSE}
@@ -12,6 +11,11 @@ knitr::opts_chunk$set(collapse = TRUE)
 ```
 
 # R Markdown
+
+Adding in line math: $\alpha + \beta$. Adding outline math:\
+$$
+Y_i \sim N(\mu, \sigma^2) 
+$$
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
