@@ -47,28 +47,22 @@ socialLinks:
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
 softSkills:
-- name: Statistics
+- name: (Bio)Statistics
   percentage: 100
   color: "#2171b5"
-- name: Digital Health Technologies
+- name: Digital Health
   percentage: 100
   color: yellow
+- name: Clinical Trials
+  percentage: 100
+  color: "#2171b5"
 - name: Data Science
   percentage: 100
-  color: "#2171b5"
+  color: yellow
 - name: Causal Inference
   percentage: 100
-  color: yellow
-- name: Machine Learning
-  percentage: 100
   color: "#2171b5"
-- name: Epidemiolgy
-  percentage: 100
-  color: yellow
-- name: Publich Health
-  percentage: 100
-  color: "#2171b5"
-- name: Climate Change
+- name: Machine \nLearning
   percentage: 100
   color: yellow
 # you can also provide color code instead of pre-defined color name
