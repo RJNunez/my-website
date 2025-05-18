@@ -6,12 +6,12 @@ greeting: "Hi, I'm"
 image: "images/author/rolando2.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "racosta@fas.harvard.edu"
+  email: "rolando.acosta@regeneron.com"
   #phone: "+7876622807"
 
 # some summary about what you do
 summary:
   - Welcome to my website
-  - I am a Biostatistics PhD Candidate at Harvard University
+  - I am a Biostatistician at Regeneron
   - Scroll down to see more
   

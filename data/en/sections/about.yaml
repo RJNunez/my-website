@@ -8,26 +8,25 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Biostatistics PhD Candidate
+designation: Manager Biostatistics
 # your company information
 company:
-  name: Harvard University
-  url: "https://www.hsph.harvard.edu/biostatistics/"
+  name: Regeneron Pharmaceuticals Inc.
+  url: "https://www.regeneron.com"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: I am a PhD candidate at [Harvard University](https://www.hsph.harvard.edu/biostatistics/) working with [Rafael Irizarry](https://rafalab.github.io). Currently, my research focuses on estimating human mortality and mobility after natural hazards. 
-         I received my Bachelor's in Computational Mathematics in 2017 from the [University of Puerto Rico at Humacao](https://www.upr.edu/humacao/), and my Master's in Biostatistics in 2020 from [Harvard University](https://www.hsph.harvard.edu/biostatistics/).
-         More broadly, I am interested in developing statistical methods and computational tools to elucidate problems in medicine, public health and society in general. Other interests of mine are to the right. 
+summary: I am a biostatistician at [Regeneron Pharmaceuticals Inc](https://www.regeneron.com) working in the Biostatistical Engineering team, where I leverage advanced statistical methodologies to drive impactful decision-making in pharmaceutical development. Specifically, I help develop novel digital endpoints for clinical trials through the assessment of wearable devices. I also spend my time working in Hematology Oncology clinical trials, where I oversee the design, analysis, and execution of clinical studies. 
+         I have a PhD in Biostatistics from  [Harvard University](https://www.hsph.harvard.edu/biostatistics/), where I worked with [Rafael Irizarry](https://rafalab.github.io). My research focused on estimating human mortality and mobility after natural hazards. I received a Master's in Biostatistics in 2020 from [Harvard University](https://www.hsph.harvard.edu/biostatistics/) and a Bachelor's in Computational Mathematics in 2017 from the [University of Puerto Rico at Humacao](https://www.upr.edu/humacao/),  More broadly, I am interested in developing statistical methods and computational tools to elucidate problems in medicine, public health and society in general. Other interests of mine are to the right.
          
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "racosta@fas.harvard.edu"
+  url: "rolando.acosta@regeneron.com"
 - name: Twitter
   icon: "fab fa-twitter"
   url: "https://twitter.com/RJANunez"
@@ -48,6 +47,12 @@ socialLinks:
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
 softSkills:
+- name: Statistics
+  percentage: 100
+  color: "#2171b5"
+- name: Digital Health Technologies
+  percentage: 100
+  color: yellow
 - name: Data Science
   percentage: 100
   color: "#2171b5"

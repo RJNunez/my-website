@@ -11,6 +11,53 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Regeneron Pharmaceuticals Inc.
+    url: "https://www.regeneron.com"
+    location: Cambridge, MA
+    # company overview
+    overview: Regeneron is a leading biotechnology company that invents, develops and commercializes life-transforming medicines for people with serious diseases.
+  positions:
+  - designation: Manager Biostatistician
+    start: Jan 2024
+    end: Present
+    responsibilities:
+    - Lead the design and analysis of clinical trials and pilot studies.
+    - Apply advanced statistical methods to support pharmaceutical development.
+    - Dual role across Biostatistical Engineering and Clinical Hematology teams.
+    - Develop novel digital endpoints using data from wearable devices.
+    - Oversees design, analysis, and execution of clinical trials in Hematology Oncology.
+    - Skilled in cross-functional collaboration and regulatory reporting.
+    - Engages in innovative statistical research to support therapeutic advancements. 
+
+- company:
+    name: Digital Medicine Society
+    url: "https://dimesociety.org"
+    location: Boston, MA
+    # company overview
+    overview: The Digital Medicine Society (DiMe) is a global non-profit and the professional home for digital medicine. Together, we drive broad adoption of digital approaches to advance the practice of medicine to enhance public health.
+  positions:
+  - designation: Statistical Advisory Committee Member
+    start: Dec 2023
+    end: Mar 2025
+    responsibilities:
+    - Served as a SAC member for the Digital Medicine Society's Validating Novel Digital Clinical Measures project.
+
+- company:
+    name: Regeneron Pharmaceuticals Inc.
+    url: "https://www.regeneron.com"
+    location: Cambridge, MA
+    # company overview
+    overview: Regeneron is a leading biotechnology company that invents, develops and commercializes life-transforming medicines for people with serious diseases.
+  positions:
+  - designation: Principal Biostatistician
+    start: Jul 2022
+    end: Dec 2023
+    responsibilities:
+    - Lead the design and analysis of pilot studies in healthy populations, and first-in-human studies in populations of interest, to assess the operating characteristics of novel wearable devices, driving the development of innovative digital endpoints.
+    - Advanced pharmaceutical innovations through cutting-edge statistical, machine learning, and artificial intelligence methodologies.
+    - Collaborated extensively with cross-functional teams, including medical, clinical, operations, and regulatory departments to drive project outcomes.
+
+- company:
     name: Google
     url: "https://about.google"
     location: Boston, MA (Remote)
