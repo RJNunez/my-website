@@ -1,3 +1,15 @@
+---
+title: "Test blog post"
+date: 2025-05-18
+description: A welcome post for the visitors
+menu:
+  sidebar:
+    name: Welcome
+    identifier: welcome
+    weight: 10
+hero: index_files/figure-markdown_strict/test-img.png
+---
+
 # R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax
@@ -38,7 +50,7 @@ You can also embed plots. See Figure @ref(fig:pie) for example:
 
 <figure>
 <img
-src="index_files/figure-markdown_strict/pie-1.png"
+src="/Users/rolando.acosta/Documents/GitHub/my-website/content/post/2015-07-23-r-rmarkdown/index_files/figure-markdown_strict/pie-1.png"
 alt="A fancy pie chart." />
 <figcaption aria-hidden="true">A fancy pie chart.</figcaption>
 </figure>
