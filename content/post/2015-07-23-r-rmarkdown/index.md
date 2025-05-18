@@ -1,7 +1,7 @@
 ---
 title: "My first post"
 date: 2025-05-18
-hero: test-img.png
+hero: images/test-img.png
 ---
 
 # R Markdown
