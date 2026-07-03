@@ -91,3 +91,9 @@ section{position:relative;z-index:1;padding:90px 0;}
 .post-body ul{margin:0 0 18px 20px;line-height:1.7;}
 .post-body a{color:var(--sky);text-decoration:underline;}
 .post-canonical{margin-top:40px;color:#aebccb;font-size:14px;}
+@media(max-width:820px){
+  .site-nav{flex-wrap:wrap;justify-content:center;gap:10px 18px;padding:12px 18px;}
+  .site-nav .brand{width:100%;text-align:center;}
+  .site-nav .links{gap:16px;flex-wrap:wrap;justify-content:center;}
+  .site-nav .cta{display:none;}
+}
