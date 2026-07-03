@@ -7,3 +7,7 @@ blogdown
 public/ # if using Netlify
 .superpowers/
 .playwright-mcp/
+# brainstorming scratch screenshots
+v5-*.jpeg
+v5b-*.jpeg
+unstructured-full.png
