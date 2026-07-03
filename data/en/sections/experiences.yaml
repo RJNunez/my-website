@@ -21,13 +21,11 @@ experiences:
     start: Jan 2024
     end: Present
     responsibilities:
-    - Lead the design and analysis of clinical trials and pilot studies.
-    - Apply advanced statistical methods to support pharmaceutical development.
-    - Dual role across Biostatistical Engineering and Clinical Hematology teams.
-    - Develop novel digital endpoints using data from wearable devices.
-    - Oversees design, analysis, and execution of clinical trials in Hematology Oncology.
-    - Skilled in cross-functional collaboration and regulatory reporting.
-    - Engages in innovative statistical research to support therapeutic advancements. 
+    - Serve as AI development and strategy lead within the Quantitative Innovation & Statistical Strategy (QISS) group.
+    - Drive the integration of AI and automation into biostatistics workflows.
+    - Leverage advanced statistical methodologies and AI to drive impactful decision-making in pharmaceutical development.
+    - Bridge deep statistical expertise with strategic communication as a cross-functional leader.
+    - Focus on accelerating drug development timelines and advancing therapeutic breakthroughs through innovative methodology and AI adoption.
 
 - company:
     name: Digital Medicine Society
@@ -64,7 +62,7 @@ experiences:
     # company overview
     overview: Google LLC is an American multinational technology company that specializes in Internet-related services and products.
   positions:
-  - designation: Data Science Intern
+  - designation: Data Science Intern, Google Payments
     start: Jun 2021
     end: Aug 2021
     responsibilities:
