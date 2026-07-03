@@ -1,0 +1,24 @@
+{{ $p := hugo.Data.en.sections.projects }}
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="section-label mono">/ Selected projects</div>
+    <h2 class="sec-title">{{ $p.section.name }}</h2>
+    <div class="filters">
+      {{ range $p.buttons }}
+        <button class="filter-btn{{ if eq .filter "all" }} active{{ end }}" data-filter="{{ .filter }}">{{ .name }}</button>
+      {{ end }}
+    </div>
+    <div class="grid3" id="project-grid">
+      {{ $bars := slice "var(--pink)" "var(--sky)" "var(--coral)" "var(--sand)" "var(--lilac)" "var(--green)" }}
+      {{ range $i, $proj := $p.projects }}
+        {{ $link := $proj.url }}{{ if $proj.repo }}{{ $link = $proj.repo }}{{ end }}
+        <a class="pcard glass" href="{{ $link }}" target="_blank" rel="noopener" data-tags="{{ delimit $proj.tags " " }}">
+          <div class="bar" style="{{ printf "background:%s;" (index $bars (mod $i 6)) | safeCSS }}"></div>
+          <div class="k mono">{{ $proj.role }} · {{ $proj.timeline }}</div>
+          <h3>{{ $proj.name }}</h3>
+          <p>{{ $proj.summary | truncate 180 }}</p>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
