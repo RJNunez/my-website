@@ -1,5 +1,5 @@
-{{ $author := .Site.Data.en.author }}
-{{ $about := .Site.Data.en.sections.about }}
+{{ $author := hugo.Data.en.author }}
+{{ $about := hugo.Data.en.sections.about }}
 <section class="hero" id="home">
   <div class="hero-inner wrap">
     <img class="hero-photo" src="{{ (print "/" $author.image) | relURL }}" alt="{{ $author.name }}">
