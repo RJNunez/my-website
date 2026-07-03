@@ -11,3 +11,7 @@ public/ # if using Netlify
 v5-*.jpeg
 v5b-*.jpeg
 unstructured-full.png
+# hugo build lock + subagent verification screenshots
+.hugo_build.lock
+*-verify.png
+task*.png
