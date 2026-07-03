@@ -5,7 +5,9 @@
 </head>
 <body>
   {{ partial "background.html" . }}
+  {{ partial "nav.html" . }}
   {{ block "main" . }}{{ end }}
+  {{ partial "footer.html" . }}
   <script src="{{ "js/scroll-pan.js" | relURL }}" defer></script>
 </body>
 </html>
