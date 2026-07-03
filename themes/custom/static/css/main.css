@@ -58,3 +58,10 @@ section{position:relative;z-index:1;padding:90px 0;}
 .pcard h3{font-size:18px;font-weight:700;margin-bottom:8px;font-family:'Archivo',sans-serif;letter-spacing:normal;}
 .pcard p{font-size:13.5px;color:#cdd8e4;line-height:1.5;}
 @media(max-width:900px){.grid3{grid-template-columns:1fr;}}
+.timeline{display:flex;flex-direction:column;gap:16px;}
+.xitem{display:flex;gap:20px;padding:26px;}
+.xnum{font-family:'Archivo Expanded',sans-serif;font-weight:900;font-size:28px;color:var(--pink);min-width:44px;}
+.xbody h3{font-size:20px;font-weight:800;font-family:'Archivo',sans-serif;letter-spacing:normal;}
+.xco{margin:4px 0;}.xco a{color:var(--sky);text-decoration:none;font-weight:600;}
+.xmeta{color:#bcd0e4;margin-bottom:12px;}
+.xbody ul{margin-left:18px;color:#dbe3ec;font-size:14px;line-height:1.6;}

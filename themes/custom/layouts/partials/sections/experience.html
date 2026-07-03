@@ -1,0 +1,22 @@
+{{ $e := hugo.Data.en.sections.experiences }}
+<section class="experience" id="experience">
+  <div class="wrap">
+    <div class="section-label mono">/ Experience</div>
+    <h2 class="sec-title">Where I've worked.</h2>
+    <div class="timeline">
+      {{ range $i, $x := $e.experiences }}
+        <div class="xitem glass">
+          <div class="xnum">{{ add $i 1 }}</div>
+          <div class="xbody">
+            {{ range $x.positions }}
+              <h3>{{ .designation }}</h3>
+              <div class="xco"><a href="{{ $x.company.url }}" target="_blank" rel="noopener">{{ $x.company.name }}</a></div>
+              <div class="xmeta mono">{{ .start }} – {{ .end | default "Present" }}{{ if $x.company.location }} · {{ $x.company.location }}{{ end }}</div>
+              <ul>{{ range .responsibilities }}<li>{{ . }}</li>{{ end }}</ul>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
