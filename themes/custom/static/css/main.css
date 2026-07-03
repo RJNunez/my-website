@@ -65,3 +65,10 @@ section{position:relative;z-index:1;padding:90px 0;}
 .xco{margin:4px 0;}.xco a{color:var(--sky);text-decoration:none;font-weight:600;}
 .xmeta{color:#bcd0e4;margin-bottom:12px;}
 .xbody ul{margin-left:18px;color:#dbe3ec;font-size:14px;line-height:1.6;}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.tcard{display:block;padding:24px;text-decoration:none;color:#fff;transition:transform .15s ease;}
+.tcard:hover{transform:translateY(-3px);}
+.tcard h3{font-size:17px;font-weight:800;font-family:'Archivo',sans-serif;letter-spacing:normal;margin-bottom:10px;}
+.tsum{font-size:14px;color:#dbe3ec;line-height:1.55;}
+.tsum em{color:var(--sand);}
+@media(max-width:800px){.grid2{grid-template-columns:1fr;}}

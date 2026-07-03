@@ -1,0 +1,15 @@
+{{ $t := hugo.Data.en.sections.skills }}
+<section class="teaching" id="teaching">
+  <div class="wrap">
+    <div class="section-label mono">/ Teaching</div>
+    <h2 class="sec-title">{{ $t.section.name }}</h2>
+    <div class="grid2">
+      {{ range $t.skills }}
+        <a class="tcard glass" href="{{ .url }}" target="_blank" rel="noopener">
+          <h3>{{ .name }}</h3>
+          <div class="tsum">{{ .summary | markdownify }}</div>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
