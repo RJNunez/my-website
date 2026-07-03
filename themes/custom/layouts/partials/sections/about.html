@@ -1,0 +1,23 @@
+{{ $about := .Site.Data.en.sections.about }}
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="section-label mono">/ About</div>
+      <h2 class="about-title">Statistics for medicine, public health &amp; society.</h2>
+      <div class="about-body">{{ $about.summary | markdownify }}</div>
+      <div class="chips">
+        {{ $palette := slice "c1" "c2" "c3" "c4" "c5" "c6" }}
+        {{ range $i, $s := $about.softSkills }}
+          <span class="chip {{ index $palette (mod $i 6) }}">{{ $s.name }}</span>
+        {{ end }}
+      </div>
+    </div>
+    <div class="glass facts">
+      <div class="section-label mono">Fast facts</div>
+      <div class="row"><span>Role</span><span>{{ $about.designation }}</span></div>
+      <div class="row"><span>Company</span><span>{{ $about.company.name }}</span></div>
+      <div class="row"><span>PhD</span><span>Harvard University</span></div>
+      <div class="row"><span>Based in</span><span>Cambridge, MA</span></div>
+    </div>
+  </div>
+</section>
