@@ -1,0 +1,4 @@
+name = "custom"
+license = "MIT"
+min_version = "0.55.0"
+description = "Custom personal site theme for Rolando J. Acosta Nuñez"

@@ -1,13 +1,13 @@
 baseURL: https://rjacosta.netlify.app/
-languageCode: en-us
+locale: en-us
 title: "Rolando J. Acosta Nuñez"
-theme: "toha"
+theme: "custom"
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
   en:
-    languageName: English
+    label: English
     weight: 1
 #  bn:
 #    languageName: বাংলা
