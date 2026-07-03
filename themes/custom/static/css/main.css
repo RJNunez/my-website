@@ -12,3 +12,5 @@ h1,h2,h3{font-family:'Archivo Expanded','Archivo',sans-serif;letter-spacing:-.02
 a{color:inherit;}
 section{position:relative;z-index:1;padding:90px 0;}
 .section-label{margin-bottom:14px;opacity:.75;}
+.bg{position:fixed;inset:0;z-index:-2;background-size:165% auto;background-position:center 0%;background-repeat:no-repeat;background-color:var(--ink);}
+.scrim{position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.10) 0%,rgba(0,0,0,.20) 50%,rgba(0,0,0,.45) 100%);}
