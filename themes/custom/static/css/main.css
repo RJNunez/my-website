@@ -79,3 +79,15 @@ section{position:relative;z-index:1;padding:90px 0;}
 .social a:hover{color:var(--sky);}
 .social i{margin-right:6px;}
 .contact-cv{margin-top:28px;}
+.blog-list,.post{padding-top:120px;}
+.wrap-narrow{max-width:720px;margin:0 auto;padding:0 32px;}
+.back{color:var(--sky);text-decoration:none;display:inline-block;margin-bottom:20px;}
+.post-title{font-size:44px;font-weight:900;margin-bottom:10px;}
+.post-meta{color:#bcd0e4;margin-bottom:30px;}
+.post-body{font-size:17px;line-height:1.75;color:#e8ecf0;}
+.post-body h2{font-size:28px;margin:34px 0 14px;}
+.post-body h3{font-size:21px;margin:28px 0 12px;}
+.post-body p{margin-bottom:18px;}
+.post-body ul{margin:0 0 18px 20px;line-height:1.7;}
+.post-body a{color:var(--sky);text-decoration:underline;}
+.post-canonical{margin-top:40px;color:#aebccb;font-size:14px;}
