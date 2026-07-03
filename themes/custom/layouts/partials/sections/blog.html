@@ -1,0 +1,18 @@
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+<section class="blogteaser" id="blog-teaser">
+  <div class="wrap">
+    <div class="section-label mono">/ Blog</div>
+    <h2 class="sec-title">Latest writing.</h2>
+    <div class="grid3">
+      {{ range first 3 $posts.ByDate.Reverse }}
+        <a class="pcard glass" href="{{ .RelPermalink }}">
+          <div class="bar" style="{{ printf "background:%s;" "var(--lilac)" | safeCSS }}"></div>
+          <div class="k mono">{{ .Date.Format "Jan 2, 2006" }}</div>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Summary | truncate 160 }}</p>
+        </a>
+      {{ end }}
+    </div>
+    <a class="btn-ghost" href="{{ "/blog/" | relURL }}" style="margin-top:24px;display:inline-block;">All posts →</a>
+  </div>
+</section>

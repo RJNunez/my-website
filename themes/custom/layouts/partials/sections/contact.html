@@ -1,0 +1,15 @@
+{{ $about := hugo.Data.en.sections.about }}
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div class="section-label mono">/ Contact</div>
+    <h2 class="sec-title">Let's talk.</h2>
+    <p class="contact-sub">Reach me by email or find me online.</p>
+    <div class="social">
+      {{ range $about.socialLinks }}
+        {{ $href := .url }}{{ if eq .name "Email" }}{{ $href = print "mailto:" .url }}{{ end }}
+        <a href="{{ $href }}" target="_blank" rel="noopener" aria-label="{{ .name }}"><i class="{{ .icon }}"></i> {{ .name }}</a>
+      {{ end }}
+    </div>
+    <a class="btn-primary" href="{{ "files/resume.pdf" | relURL }}" style="margin-top:24px;">Download CV</a>
+  </div>
+</section>

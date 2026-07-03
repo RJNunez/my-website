@@ -72,3 +72,9 @@ section{position:relative;z-index:1;padding:90px 0;}
 .tsum{font-size:14px;color:#dbe3ec;line-height:1.55;}
 .tsum em{color:var(--sand);}
 @media(max-width:800px){.grid2{grid-template-columns:1fr;}}
+.contact-inner{text-align:center;}
+.contact-sub{color:#dbe3ec;margin-bottom:22px;}
+.social{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;}
+.social a{color:#fff;text-decoration:none;font-size:15px;font-weight:600;}
+.social a:hover{color:var(--sky);}
+.social i{margin-right:6px;}
