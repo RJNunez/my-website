@@ -1,0 +1,14 @@
+{{ $author := .Site.Data.en.author }}
+{{ $about := .Site.Data.en.sections.about }}
+<section class="hero" id="home">
+  <div class="hero-inner wrap">
+    <img class="hero-photo" src="{{ (print "/" $author.image) | relURL }}" alt="{{ $author.name }}">
+    <span class="tag mono">{{ $about.designation }} · Regeneron</span>
+    <h1>{{ $author.greeting }} {{ $author.nickname }}.<br>I make data speak.</h1>
+    <p class="sub">Manager Biostatistician at Regeneron — building novel digital endpoints for clinical trials, and estimating the human toll of natural disasters.</p>
+    <div class="btns">
+      <a class="btn-primary" href="{{ "/#projects" | relURL }}">View my work</a>
+      <a class="btn-ghost" href="{{ "/#contact" | relURL }}">Get in touch</a>
+    </div>
+  </div>
+</section>
