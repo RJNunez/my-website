@@ -18,8 +18,8 @@ company:
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: I am a biostatistician at [Regeneron Pharmaceuticals Inc](https://www.regeneron.com) working in the Biostatistical Engineering team, where I leverage advanced statistical methodologies to drive impactful decision-making in pharmaceutical development. Specifically, I help develop novel digital endpoints for clinical trials through the assessment of wearable devices. I also spend my time working in Hematology Oncology clinical trials, where I oversee the design, analysis, and execution of clinical studies. 
-         I have a PhD in Biostatistics from  [Harvard University](https://www.hsph.harvard.edu/biostatistics/), where I worked with [Rafael Irizarry](https://rafalab.github.io). My research focused on estimating human mortality and mobility after natural hazards. I received a Master's in Biostatistics in 2020 from [Harvard University](https://www.hsph.harvard.edu/biostatistics/) and a Bachelor's in Computational Mathematics in 2017 from the [University of Puerto Rico at Humacao](https://www.upr.edu/humacao/),  More broadly, I am interested in developing statistical methods and computational tools to elucidate problems in medicine, public health and society in general. Other interests of mine are to the right.
+summary: I am an experienced biostatistician at [Regeneron Pharmaceuticals Inc](https://www.regeneron.com) with a proven track record in designing and analyzing clinical studies, leveraging advanced statistical methodologies and artificial intelligence (AI) to drive impactful decision-making in pharmaceutical development. I currently serve at the intersection of biostatistics, clinical trials, and AI as an AI development and strategy lead within the Quantitative Innovation & Statistical Strategy (QISS) group, where I drive the integration of AI and automation into biostatistics workflows. A cross-functional leader, I bridge deep statistical expertise with strategic communication, with a focus on accelerating drug development timelines and advancing therapeutic breakthroughs through innovative methodology and AI adoption. Previously, I split my time between the Biostatistical Engineering team and Clinical Hematology, developing novel digital endpoints through the assessment of wearable devices and overseeing the design, analysis, and execution of clinical trials in Hematology Oncology.
+         I have a PhD in Biostatistics from [Harvard University](https://www.hsph.harvard.edu/biostatistics/), where I worked with [Rafael Irizarry](https://rafalab.github.io). My research focused on estimating human mortality and mobility after natural hazards. I received a Master's in Biostatistics in 2020 from [Harvard University](https://www.hsph.harvard.edu/biostatistics/) and a Bachelor's in Computational Mathematics in 2017 from the [University of Puerto Rico at Humacao](https://www.upr.edu/humacao/). More broadly, I am interested in developing statistical methods and computational tools to elucidate problems in medicine, public health, and society in general.
          
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -65,6 +65,9 @@ softSkills:
 - name: Machine Learning
   percentage: 100
   color: yellow
+- name: Artificial Intelligence
+  percentage: 100
+  color: "#2171b5"
 # you can also provide color code instead of pre-defined color name
 #- name: Education
 #  percentage: 100
