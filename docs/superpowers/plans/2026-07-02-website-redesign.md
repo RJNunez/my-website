@@ -6,7 +6,7 @@
 
 **Architecture:** A custom Hugo theme lives at `themes/custom/`. `config.yaml` switches `theme` from `toha` to `custom`. The theme reads the existing `data/en/**` YAML unchanged so no content migration is needed for About/Projects/Experience/Teaching. A single-page `layouts/index.html` composes section partials; `/blog` uses Hugo's list/single templates over `content/blog/*.md`. The El Morro photo is a fixed full-viewport background panned by a small vanilla-JS scroll listener.
 
-**Tech Stack:** Hugo (extended, pinned to Netlify's 0.77.0), Go HTML templates, vanilla CSS + JS, Google Fonts (Archivo, Archivo Expanded, JetBrains Mono), Font Awesome (already vendored by toha — we re-add via CDN).
+**Tech Stack:** Hugo v0.163.3 extended (installed via Homebrew; `netlify.toml` bumped to match — see Task 1), Go HTML templates, vanilla CSS + JS, Google Fonts (Archivo, Archivo Expanded, JetBrains Mono), Font Awesome via CDN.
 
 **Verification model:** This is a static site with no unit-test harness. "Tests" = (a) `hugo` builds with zero errors, and (b) browser screenshot verification via the Playwright MCP against `hugo server`. Each task that changes rendering ends by building and visually confirming.
 
@@ -46,39 +46,40 @@
 - `data/en/site.yaml` — repoint/remove Blog `customMenus` entry
 - `content/post/` — leftover demo R Markdown post removed (or left; nav no longer links it)
 
-**Untouched:** `data/<non-en>/**`, `netlify.toml`, `static/images/**`, `static/files/resume.pdf`.
+**Untouched:** `data/<non-en>/**`, `static/images/**`, `static/files/resume.pdf`.
 
 ---
 
-## Task 1: Install Hugo pinned to Netlify's version
+## Task 1: Confirm Hugo and align netlify.toml to the installed version
 
-**Files:** none (environment setup)
+**Status:** Hugo **v0.163.3+extended** is already installed via Homebrew (on PATH as `hugo`). The old plan assumed a manual 0.77.0 binary at `~/.local/bin/hugo`; that is superseded — use `hugo` directly.
 
-- [ ] **Step 1: Check for Hugo**
+**Files:**
+- Modify: `netlify.toml` (bump `HUGO_VERSION` to `0.163.3` so cloud builds match local)
 
-Run: `hugo version 2>/dev/null || echo "NOT INSTALLED"`
-Expected: `NOT INSTALLED` (or a version string — if `0.77.0`, skip to Task 2).
+- [ ] **Step 1: Confirm Hugo is on PATH and extended**
 
-- [ ] **Step 2: Install Hugo extended 0.77.0 (matches netlify.toml HUGO_VERSION)**
+Run: `hugo version`
+Expected: contains `v0.163.3` and `extended`. (Confirmed 2026-07-02.)
 
-Run (macOS, Homebrew tap for pinned version is unreliable; use the official release binary):
+- [ ] **Step 2: Note — the current toha theme does NOT build on this Hugo**
+
+Run: `hugo --gc --minify 2>&1 | tail -5`
+Expected: `ERROR ... no such template "_internal/google_analytics_async.html"`.
+This is expected and harmless: toha (2020) references an internal template removed in modern Hugo. We are replacing toha, so this error disappears once `config.theme` switches to `custom` (Task 2). Do NOT try to fix toha.
+
+- [ ] **Step 3: Bump netlify.toml HUGO_VERSION to match local**
+
+In `netlify.toml`, replace every `HUGO_VERSION = "0.77.0"` with `HUGO_VERSION = "0.163.3"` (there are multiple build contexts — replace all). This only affects the next Netlify deploy, which requires explicit user approval per the plan's final step.
+
+Run to verify: `grep -c 'HUGO_VERSION = "0.163.3"' netlify.toml` → expect the same count as the original `0.77.0` occurrences (3).
+
+- [ ] **Step 4: Commit**
+
 ```bash
-cd /tmp && curl -L -o hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.77.0/hugo_extended_0.77.0_macOS-64bit.tar.gz && tar xzf hugo.tar.gz hugo && mkdir -p ~/.local/bin && mv hugo ~/.local/bin/hugo && chmod +x ~/.local/bin/hugo
+git add netlify.toml
+git commit -m "Bump Netlify Hugo version to 0.163.3 to match local toolchain"
 ```
-
-- [ ] **Step 3: Verify Hugo runs**
-
-Run: `~/.local/bin/hugo version`
-Expected: output contains `v0.77.0` and `extended`.
-
-- [ ] **Step 4: Confirm the current (toha) site still builds as a baseline**
-
-Run: `cd /Users/rolando.acosta/Desktop/my-website && ~/.local/bin/hugo --gc --minify --quiet && echo BUILD_OK`
-Expected: `BUILD_OK` with no error output. This proves the toolchain works before we change anything.
-
-- [ ] **Step 5: Commit (no code change; note baseline in message only if needed — skip if nothing to commit)**
-
-No commit needed for environment-only setup.
 
 ---
 
@@ -105,7 +106,7 @@ description = "Custom personal site theme for Rolando J. Acosta Nuñez"
 `themes/custom/layouts/_default/baseof.html`:
 ```html
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang="{{ .Site.Language.Lang | default "en" }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -117,6 +118,8 @@ description = "Custom personal site theme for Rolando J. Acosta Nuñez"
 </html>
 ```
 
+> Note: use `.Site.Language.Lang`, not `.Site.LanguageCode` (deprecated in Hugo 0.158). Avoid `_internal/google_analytics_async.html` and other `_internal/*` templates anywhere in the custom theme — several were removed in modern Hugo and caused the toha build failure.
+
 - [ ] **Step 3: Create minimal index**
 
 `themes/custom/layouts/index.html`:
@@ -127,25 +130,21 @@ description = "Custom personal site theme for Rolando J. Acosta Nuñez"
 {{ end }}
 ```
 
-- [ ] **Step 4: Point config at the new theme**
+- [ ] **Step 4: Point config at the new theme and clear deprecation warnings**
 
-In `config.yaml`, change:
-```yaml
-theme: "toha"
-```
-to:
-```yaml
-theme: "custom"
-```
+In `config.yaml`:
+- Change `theme: "toha"` → `theme: "custom"`.
+- Change `languageCode: en-us` → `locale: en-us` (`languageCode` deprecated in Hugo 0.158).
+- Under `languages.en`, change `languageName: English` → `label: English` (`languageName` deprecated in Hugo 0.158).
 
-- [ ] **Step 5: Build and verify**
+- [ ] **Step 5: Build and verify (clean, no warnings)**
 
-Run: `~/.local/bin/hugo --quiet && echo BUILD_OK`
-Expected: `BUILD_OK`, no template errors.
+Run: `hugo 2>&1 | tail -5; echo "EXIT=${PIPESTATUS[0]}"`
+Expected: `EXIT=0`, and NO `deprecated` warnings and NO template errors. (The google_analytics error from Task 1 is gone now that toha is no longer the theme.)
 
 - [ ] **Step 6: Serve and screenshot-verify the scaffold renders**
 
-Run (background): `~/.local/bin/hugo server --port 1313 --disableFastRender`
+Run (background): `hugo server --port 1313 --disableFastRender`
 Then navigate the Playwright MCP browser to `http://localhost:1313/` and confirm the page shows the site title and "Custom theme scaffold OK." Stop the server after.
 
 - [ ] **Step 7: Commit**
@@ -210,7 +209,7 @@ Replace the `<head>...</head>` block in `themes/custom/layouts/_default/baseof.h
 
 - [ ] **Step 4: Build and verify**
 
-Run: `~/.local/bin/hugo --quiet && echo BUILD_OK`
+Run: `hugo --quiet && echo BUILD_OK`
 Expected: `BUILD_OK`.
 
 - [ ] **Step 5: Serve and screenshot-verify fonts/CSS load**
@@ -293,7 +292,7 @@ Temporarily set `themes/custom/layouts/index.html` to:
 
 - [ ] **Step 6: Build, serve, and screenshot-verify the pan at top/mid/bottom**
 
-Build (`~/.local/bin/hugo --quiet && echo BUILD_OK`), serve, then in the Playwright MCP:
+Build (`hugo --quiet && echo BUILD_OK`), serve, then in the Playwright MCP:
 - Set viewport 1440×900.
 - Scroll to top (instant), dispatch a `scroll` event, screenshot → expect clouds.
 - Scroll to 50%, dispatch, screenshot → expect garita.
@@ -446,7 +445,7 @@ Append to `main.css`:
 
 - [ ] **Step 4: Build and verify data accessor works**
 
-Run: `~/.local/bin/hugo --quiet && echo BUILD_OK`
+Run: `hugo --quiet && echo BUILD_OK`
 Expected: `BUILD_OK`. If it errors on the data accessor, switch to the `.Site.Data.en.*` fallback noted in Step 1 and rebuild.
 
 - [ ] **Step 5: Serve and screenshot-verify**
@@ -1027,7 +1026,7 @@ git commit -m "Add native blog with list/single templates and imported Medium po
 
 - [ ] **Step 1: Full production build with minify (matches Netlify)**
 
-Run: `~/.local/bin/hugo --gc --minify 2>&1 | tee /tmp/build.log; echo "EXIT=${PIPESTATUS[0]}"`
+Run: `hugo --gc --minify 2>&1 | tee /tmp/build.log; echo "EXIT=${PIPESTATUS[0]}"`
 Expected: `EXIT=0`, and no `ERROR`/`WARN` lines about missing layouts. Inspect `/tmp/build.log`.
 
 - [ ] **Step 2: Serve the built site and do a full top-to-bottom screenshot pass**
