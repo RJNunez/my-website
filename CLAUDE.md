@@ -55,3 +55,5 @@ Content and layout are strictly separated — **edit content in YAML, not templa
 ## Deploy
 
 Push to `main` → Netlify auto-builds and deploys. The repo remote is HTTPS; pushing requires a GitHub Personal Access Token or SSH (password auth is disabled by GitHub).
+
+- **Do NOT set `HUGO_THEME` in `netlify.toml`.** That env var overrides `theme:` in `config.yaml`. It was previously pinned to `toha`, which made Netlify build the dead theme and fail on the removed `_internal/google_analytics_async.html` partial — even though local `hugo` (no env var) built `custom` fine. The theme must come from `config.yaml` only.
