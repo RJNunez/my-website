@@ -2,6 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ .Site.Params.description | default .Site.Title }}">
+<link rel="icon" type="image/svg+xml" href="{{ "images/site/favicon.svg" | relURL }}">
+<link rel="icon" type="image/png" href="{{ "images/site/favicon.png" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "images/site/favicon.png" | relURL }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Expanded:wght@700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
